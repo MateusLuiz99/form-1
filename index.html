@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 01</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Título -->
+    <div class="title">
+        <h1><b>freeCodeCamp Survey Form</b></h1>
+        <p><i>Thank you for tacking the time to help us improve the platform</i></p>
+    </div>
+    <!-- Box do formulário -->
+    <div class="box">
+        <form action="">
+            <div class="inputBox">
+                <!-- Entradas dos dados do cliente -->
+                <label for="">Name</label>
+                <input type="text" class="form-control" name="name" id="inName" placeholder="Enter your name" required>
+            </div><br>
+            <div class="inputBox">
+                <label id="name-label" for="">Email</label>
+                <input type="text" class="form-control" name="email" id="inEmail" placeholder="Enter your Email" required>
+            </div><br>
+            <div class="inputBox">
+                <label for="">Age <span>(optional)</span></label>
+                <input type="text" class="form-control" name="age" id="inAge" placeholder="Age">
+            </div><br>
+            <div class="inputBox">
+                <!-- Campo de seleção de função do cliente -->
+                <p>Which option best describes your current role?</p>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div><br>
+            <div class="inputBox">
+                <!-- Campo de radio de recomendação do site -->
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label for="definitely">
+                    <input type="radio" name="user" id="definitely" checked>
+                    Definitely
+                </label>
+                <label for="maybe">
+                    <input type="radio" name="user" id="maybe">
+                    Maybe
+                </label>
+                <label for="not-sure">
+                    <input type="radio" name="user" id="not-sure">
+                    Not sure
+                </label>
+            </div><br>
+            <div class="inputBox">
+                <!-- Campo de seleção de recurso favorito do cliente -->
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select name="option" id="option" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open">Open Source</option>
+                </select>
+            </div><br>
+            <div class="inputBox">
+                <!-- Campo de checkbox para selecionar as opções que o cliente quer que melhore -->
+                <p>What you like to see improved?<span>(Check all that apply)</span></p>
+                <label for="inFront">
+                    <input type="checkbox" name="front" id="inFront">
+                    Front-end Projects
+                </label>
+                <label for="inBack">
+                    <input type="checkbox" name="back" id="inBack">
+                    Back-end Projects
+                </label>
+                <label for="inData">
+                    <input type="checkbox" name="data" id="inData">
+                    Data Visualization
+                </label>
+                <label for="inChallenges">
+                    <input type="checkbox" name="challenges" id="inChallenges">
+                    Challenges
+                </label>
+                <label for="inOpen">
+                    <input type="checkbox" name="open" id="inOpen">
+                    Open Source Community
+                </label>
+                <label for="inGitter">
+                    <input type="checkbox" name="gitter" id="inGitter">
+                    Gitter help rooms
+                </label>
+                <label for="inVideos">
+                    <input type="checkbox" name="videos" id="inVideos">
+                    Videos
+                </label>
+                <label for="inCity">
+                    <input type="checkbox" name="city" id="inCity">
+                    City Meetups
+                </label>
+                <label for="inWiki">
+                    <input type="checkbox" name="wiki" id="inWiki">
+                    Wiki
+                </label>
+                <label for="inForum">
+                    <input type="checkbox" name="forum" id="inForum">
+                    Forum
+                </label>
+                <label for="inAdd">
+                    <input type="checkbox" name="add" id="inAdd">
+                    Additional Courses
+                </label>
+            </div><br>
+            <div class="inputBox">
+                <!-- Campo de textarea para comentários -->
+                <p>Any comments or seggestions?</p>
+                <textarea name="comments" id="inComments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div><br>
+            <div class="inputBox">
+                <!-- Campo submit para enviar os dados do cliente -->
+                <input type="submit" id="submit" class="submit-button" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
